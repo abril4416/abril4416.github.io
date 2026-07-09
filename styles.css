@@ -209,6 +209,82 @@ blockquote p:last-child {
     margin: 10px auto;
 }
 
+.photo-zoom-wrapper {
+    float: none;
+    padding-left: .01em;
+    margin: 0 1rem 1rem 0;
+}
+
+.photo-zoom-frame {
+    width: 140px;
+    height: 140px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.photo-zoom-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform-origin: center center;
+    transition: transform .18s ease;
+    margin: 0;
+}
+
+.photo-zoom-controls {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 6px;
+}
+
+.photo-zoom-controls button {
+    min-width: 28px;
+    border: 1px solid #bdbdbd;
+    background: #f8f8f8;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.photo-zoom-controls button:hover {
+    background: #ececec;
+}
+
+.lab-logo-inline {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.name-with-logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+.intro-header-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8px 0 2px;
+}
+
+.intro-header-logo span {
+    font-size: .88rem;
+    color: #666;
+}
+
+.mini-intro h1.name-with-logo {
+    max-width: none;
+    justify-content: center;
+}
+
 
 #menu {
     display: table;
