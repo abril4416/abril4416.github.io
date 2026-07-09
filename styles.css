@@ -3,6 +3,21 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box
 }
+.intro-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 2em;
+  width: 100%;
+}
+
+.intro-photo {
+  height: 140px;
+  flex-shrink: 0;
+}
+
+.intro-text h3 {
+  margin-top: 0;
+}
 
 html,
 body {
