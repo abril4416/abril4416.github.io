@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- 
+The design of this website is based on https://nlp.stanford.edu/~johnhew/ and modified by Wenxuan Zhang (isakzhang AT gmail).
+PLS ask for permission & add a link to this website before you directly copy and apply to yours 
+-->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title> Rui Cao's Homepage </title>
+  <link rel="icon" type="image/png" href="img/lab_logo.png">
+ <meta name="author" content="Rui Cao">
+  <meta name="keywords" content="Rui Cao, 曹睿, Singapore Management University, University of Cambridge, Singapore University of Technology and Design, Rui SMU">
+  <meta name="robots" content="index,follow">
+  <meta name="description" content="Homepage of Rui Cao">
+  <link rel="stylesheet" href="./styles.css">
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PKH6CJME2D"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-PKH6CJME2D');
+</script>
+
+  <style>
+    .hidden-content {
+        display: none;
+    }
+      .team-hero {
+      margin: 34px 0 24px;
+      padding: 34px 28px;
+      border-radius: 24px;
+      background: linear-gradient(135deg, rgba(70,130,180,.14), rgba(129,216,208,.16));
+      border: 1px solid rgba(70,130,180,.18);
+    }
+    .team-hero h2 {
+      margin: 0 0 8px;
+      font-size: 2.15rem;
+      letter-spacing: -0.03em;
+    }
+    .team-hero p {
+      margin: 0;
+      max-width: 760px;
+      color: #4b5563;
+      line-height: 1.65;
+    }
+    .section-label {
+      margin: 36px 0 18px;
+      font-size: 1.45rem;
+      border-bottom: 1px solid #e5e7eb;
+      padding-bottom: 8px;
+    }
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(185px, 1fr));
+      gap: 26px 22px;
+      margin: 0 0 32px;
+    }
+    .team-card {
+      text-align: center;
+      padding: 18px 14px 16px;
+      border-radius: 20px;
+      background: #fff;
+      border: 1px solid #edf0f3;
+      box-shadow: 0 10px 26px rgba(15, 23, 42, .055);
+      transition: transform .18s ease, box-shadow .18s ease;
+    }
+    .team-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 14px 34px rgba(15, 23, 42, .095);
+    }
+    .team-photo-wrap {
+      width: 142px;
+      height: 142px;
+      margin: 0 auto 14px;
+      border-radius: 50%;
+      padding: 4px;
+      background: linear-gradient(135deg, #4682b4, #81d8d0);
+    }
+    .team-photo {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+      background: #f3f4f6;
+      display: block;
+    }
+    .team-card h4 {
+      margin: 10px 0 5px;
+      font-size: 1.04rem;
+      line-height: 1.25;
+    }
+    .team-card p {
+      margin: 0;
+      color: #6b7280;
+      font-size: .94rem;
+      line-height: 1.35;
+    }
+    .alumni-list {
+      columns: 2;
+      column-gap: 36px;
+      margin-bottom: 38px;
+    }
+    .alumni-list li { break-inside: avoid; margin-bottom: 6px; }
+    @media (max-width: 640px) {
+      .team-hero { padding: 26px 20px; }
+      .team-hero h2 { font-size: 1.7rem; }
+      .team-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px 14px; }
+      .team-photo-wrap { width: 116px; height: 116px; }
+      .alumni-list { columns: 1; }
+    }
+  </style>
+</head>
+
+
+<body>
+  <div class="container content"> 
+  <main>
+  <div class="site-top-header">
+    <div class="page-top-logo">
+        <a href="index.html">
+            <img src="img/lab_logo.png" alt="MEVER logo">
+        </a>
+    </div>
+</div>
+
+  <!-- 
+  <br>Quick jumps: [<a href="#bio">Short Bio</a>] [<a href="#pub">Publications</a>] [<a href="#awards">Honors</a>] [<a href="#professional">Service</a>] [<a href="#teaching">Teaching&Talk</a>]
+  -->
+
+  <!--Navigation bar-->
+  <div id="menu">
+    <div>
+      <a href="index.html">About</a>
+    </div>
+    <div>
+      <a href="research.html">Publications</a>
+    </div>
+    <div>
+      <a href="group.html">MEVER Lab</a>
+    </div>
+    <div>
+      <a href="getinvolved.html">Openings</a>
+    </div>
+    <script>
+      $(function () {
+        const current = window.location.pathname.split("/");
+        $('#menu div a').each(function(){
+          const $this = $(this);
+          // if the current path is like this link, make it active
+          if (current.indexOf($this.attr("href")) !== -1) {
+            $this.parent().addClass("now");
+          }
+        })
+      });
+    </script>
+  </div>
+ 
+
+
+<section class="team-hero">
+    <h2>MEVER Lab</h2>
+    <p>Multimodal, Everything, Everywhere, Forever!</p>
+  </section>
+
+  <h3 class="section-label">Researchers</h3>
+  <div class="team-grid">
+          <article class="team-card">
+            <div class="team-photo-wrap">
+              <img class="team-photo" src="img/rui-25.jpg" alt="Rui Cao photo" loading="lazy" onerror="this.onerror=null;this.src='img/team/placeholder.svg';">
+            </div>
+            <h4>Rui Cao</h4>
+            <p>Assistant Professor<br>Lab Lead</p>
+          </article>
+          <article class="team-card">
+            <div class="team-photo-wrap">
+              <img class="team-photo" src="https://lh3.googleusercontent.com/sitesv/AA5AbUCPR3T7_83-vA6BrlcvvoaQvgyT4z_Pu5_MkElFY5zLb7mDV5C8YjCRsFqwTq3--UVTfWRGTv7YsXI35llz0i62j7dpLoKGR_GDi-WpQTX0viUd_X-1O9LqdSREllh0ufHn6aN2qSCF4FS4AV5uR6pE_k0zN2UXqpj2EOD9Db6BceLjXRogtj9XGU7K%3Dw1280" alt="Wang Han photo" loading="lazy"
+                   onerror="this.onerror=null;this.src='img/team/placeholder.svg';">
+            </div>
+            <h4>Wang Han</h4>
+            <p>PhD Student (Co-Supervise)</p>
+          </article>
+          <article class="team-card">
+            <div class="team-photo-wrap">
+              <img class="team-photo" src="https://lh3.googleusercontent.com/sitesv/AA5AbUAVUlAcEyCF5zV_qy2u0DTQSOM-4nmIKjQ-b_cF_k___cob0ke2LcDLoqxucNpPBEJfZqXLokQqqw7JYRJ5uyPL9s6USezARwHx9gvoH5j9NIDn__qQ7-dOvxj0DjFOBYmp4DraZcBzN6NeBR8ZV8auXFyT2OsiTxaIrDOgmedYOKB12MW0PG81Qu5i%3Dw1280" alt="Nirmalendu Prakash photo" loading="lazy"
+                   onerror="this.onerror=null;this.src='img/team/placeholder.svg';">
+            </div>
+            <h4>Nirmalendu Prakash</h4>
+            <p>PhD Student (Co-Supervise)</p>
+          </article>
+          <article class="team-card">
+            <div class="team-photo-wrap">
+              <img class="team-photo" src="https://lh3.googleusercontent.com/sitesv/AA5AbUCy-IjR07iX7c6KFH5oStHXYLsLbB4r1a1U44gIssPobu61jKh4bSSZHYz8pxo4QZs_IEkMJ-rVUhtqLHMjqY5o6Jf0tcBm5JRUK0v3-BPmRRLMaXgDX7GWKMB9XmEme_wv5n6RYwyDCMx2Gwno6j_gmBYdN88KvQNauya5po3QmjptY_PIc0HcdWoKRMU%3Dw1280" alt="Bryan Tan photo" loading="lazy"
+                   onerror="this.onerror=null;this.src='img/team/placeholder.svg';">
+            </div>
+            <h4>Bryan Tan</h4>
+            <p>PhD Student (Co-Supervise)</p>
+          </article>
+          <article class="team-card">
+            <div class="team-photo-wrap">
+              <img class="team-photo" src="https://lh3.googleusercontent.com/sitesv/AA5AbUCJtPUuKE0eB52zlgM5Y4MxgNka8w7O4-Zm3d1_rzUigL7PaboZzZMomYFuVvvXj1921XNmrkQk4qxHE3oG3SNKEutfd3llviXqfFlq_JiQsW_1k_BhwL8fbqlspAtjwsHNvLu1vRydSryhlHiL5gIs1AzPMaus2E4CkfsBca36PQ7MTceW4-wBNCeQ-F0%3Dw1280" alt="Yujia Hu photo" loading="lazy"
+                   onerror="this.onerror=null;this.src='img/team/placeholder.svg';">
+            </div>
+            <h4>Yujia Hu</h4>
+            <p>Senior Research Assistant</p>
+          </article>
+          <article class="team-card">
+            <div class="team-photo-wrap">
+              <img class="team-photo" src="https://lh3.googleusercontent.com/sitesv/AA5AbUCBoXE7HjQUBhVFBftQIN4wJ8B2SBN8wtZqvbwAnPqqYTxo5BsYQRept45K3YM3ulnK63vqfTBnoH0Iafwh1Bcc1-qP2f14LETVw33kltyy6KG0fVXSMU6JMPegTTtEAOCoGr67-8DeQe_TNmZqjtfERDqPao4msItivwxzbyWK9iLp4ZAGnEYpVeJ2%3Dw1280" alt="Zhuoran Wang photo" loading="lazy"
+                   onerror="this.onerror=null;this.src='img/team/placeholder.svg';">
+            </div>
+            <h4>Zhuoran Wang</h4>
+            <p>Research Assistant</p>
+          </article>
+          <article class="team-card">
+            <div class="team-photo-wrap">
+              <img class="team-photo" src="https://lh3.googleusercontent.com/sitesv/AA5AbUA109xMFSLZtLecc59y8hCQbnU4nAJ-_focCWyNZAeEZr9VJjBDUoTrCD-V24fBioFR-4BQTg3h_LCsrj1DqISbNyq56pdueDDoRuYh9Fmw-mnK-PJhF1mUjmTA3KtQ7lGfgCbm8yww0bdKgYBbed_PHrW3_C_brADslQxdF_VOl9mhbUocznoTJpaEk9iybnXdCE5o76qTWBTULoL0PigJlTzqMb9AJRYrPJvEp4c%3Dw1280" alt="Dylan Raharja photo" loading="lazy"
+                   onerror="this.onerror=null;this.src='img/team/placeholder.svg';">
+            </div>
+            <h4>Dylan Raharja</h4>
+            <p>Research Assistant</p>
+          </article>
+          <article class="team-card">
+            <div class="team-photo-wrap">
+              <img class="team-photo" src="https://lh3.googleusercontent.com/sitesv/AA5AbUBJuGe005kOH5xRXbR60Z9ouH884F4Bj4sFe1a6vMbt4RAEcUimexSl11n5imlPI2VeplI6BIZeLiF2bNaNxsHd0te1HlpDdsFwLUCoMghFl1lIvtVqTDSlneX7KLgjop_bV99-QB9ZlFtXEaZjKeWHUkL1y5ScEr7i3b37RoxqsCifzB5E3mz9ys7C%3Dw1280" alt="Thông Đoàn Tiến photo" loading="lazy"
+                   onerror="this.onerror=null;this.src='img/team/placeholder.svg';">
+            </div>
+            <h4>Thông Đoàn Tiến</h4>
+            <p>Research Assistant</p>
+          </article>
+         <article class="team-card">
+            <div class="team-photo-wrap">
+              <img class="team-photo" src="https://lh3.googleusercontent.com/sitesv/AA5AbUBJuGe005kOH5xRXbR60Z9ouH884F4Bj4sFe1a6vMbt4RAEcUimexSl11n5imlPI2VeplI6BIZeLiF2bNaNxsHd0te1HlpDdsFwLUCoMghFl1lIvtVqTDSlneX7KLgjop_bV99-QB9ZlFtXEaZjKeWHUkL1y5ScEr7i3b37RoxqsCifzB5E3mz9ys7C%3Dw1280" alt="Suliu Qin photo" loading="lazy"
+                   onerror="this.onerror=null;this.src='img/team/placeholder.svg';">
+            </div>
+            <h4>Suliu Qin</h4>
+            <p>Research Assistant</p>
+          </article>
+  </div>
+
+
+<div id='footer'>
+  <p style="text-align:center;">Last updated: July 2026</p>
+</div>
+
+</body>
+
+</html>
