@@ -209,16 +209,23 @@ blockquote p:last-child {
     margin: 10px auto;
 }
 
+.site-top-header {
+    width: 100%;
+    padding: 10px 0 14px;
+    border-bottom: 1px solid #d9d9d9;
+    margin-bottom: 12px;
+}
+
 .page-top-logo {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 6px 0 14px;
+    margin: 0;
 }
 
 .page-top-logo img {
-    width: 72px;
-    height: 72px;
+    width: 88px;
+    height: 88px;
     object-fit: contain;
     margin: 0;
 }
